@@ -1,0 +1,1 @@
+{name: "Build Game", on: [push], jobs: {build: {runs-on: "windows-latest", steps: [{name: "Checkout", uses: "actions/checkout@v4"}, {name: "Compile", uses: "itsmeow/gamemaker-kitchen-action@v1", with: {project-path: "./Sonicexe The Disaster 2D Remake.yyp", target: "Windows"}}]}}}
